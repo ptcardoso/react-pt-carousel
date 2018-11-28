@@ -1,8 +1,8 @@
 {
   "name": "react-pt-carousel",
-  "version": "0.2.0",
-  "main": "src/lib/index.js",
-  "module": "src/lib/index.js",
+  "version": "0.3.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "files": [
     "dist"
   ],

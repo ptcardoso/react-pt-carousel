@@ -1,0 +1,22 @@
+div.carousel div.indicators  {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .indicator {
+        cursor: pointer;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: rgba(255,255,255,0.5);
+        margin: 0 5px;
+
+        &.active {
+            background-color: rgba(255,255,255,1)
+        }
+    }
+}
