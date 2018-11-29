@@ -1,6 +1,8 @@
-import './styles.scss'
-import React, {useState, useEffect} from 'react'
+import './styles.css'
+import * as React from 'react'
 import {getPreviousIndex, getNextIndex} from './helpers'
+
+const {useState, useEffect} = React
 
 function renderCarouselItems(activeIndex: number, items: JSX.Element[]): JSX.Element[] {
     return items.map((element, index) => {

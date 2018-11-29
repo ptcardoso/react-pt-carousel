@@ -1,18 +1,18 @@
-import './indicators.scss'
-import React from 'react'
+import './indicators.css'
+import * as React from 'react'
 
 export interface IndicatorsProps { onClick?: (index: number) => void, numItems: number, activeIndex: number}
 
 export function Indicators(props: IndicatorsProps): JSX.Element {
-    function handleClick(index: number) {
+    function handleClick(event: React.SyntheticEvent<HTMLDivElement>) {
         if (props.onClick) {
-            props.onClick(index)
+            props.onClick(parseInt(event.currentTarget.dataset.arg || '0', 10))
         }
     }
     
     const indicators = [...Array(props.numItems)].map((_, index) => {
         return (
-            <div key={index} className={`indicator ${props.activeIndex === index ? 'active' : ''}`} onClick={() => handleClick(index)} />
+            <div key={index} data-arg={index} className={`indicator ${props.activeIndex === index ? 'active' : ''}`} onClick={handleClick} />
         )
     })
 

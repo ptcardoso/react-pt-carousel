@@ -1,5 +1,5 @@
-import './controllers.scss'
-import React from 'react'
+import './controllers.css'
+import * as React from 'react'
 import LeftArrow from '../assets/angle-left-solid.svg'
 import RightArrow from '../assets/angle-right-solid.svg'
 
