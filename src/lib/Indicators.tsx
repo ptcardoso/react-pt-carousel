@@ -1,4 +1,4 @@
-import './indicators.css'
+import '../styles/indicators.css'
 import * as React from 'react'
 
 export interface IndicatorsProps { onClick?: (index: number) => void, numItems: number, activeIndex: number}

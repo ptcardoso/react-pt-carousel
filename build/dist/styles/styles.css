@@ -1,0 +1,28 @@
+div.carousel {
+  overflow: hidden;
+  position: relative; }
+  div.carousel div.carousel-item {
+    width: 100%;
+    display: none;
+    transition: transform .6s ease;
+    height: 200px;
+    background-color: #ddd; }
+    div.carousel div.carousel-item.active, div.carousel div.carousel-item.next, div.carousel div.carousel-item.previous {
+      display: block; }
+    div.carousel div.carousel-item.active, div.carousel div.carousel-item.previous {
+      top: 0;
+      position: absolute; }
+    div.carousel div.carousel-item.next {
+      transform: translate3d(100%, 0, 0); }
+    div.carousel div.carousel-item.active {
+      transform: translate3d(0, 0, 0); }
+    div.carousel div.carousel-item.previous {
+      transform: translate3d(-100%, 0, 0); }
+  div.carousel div.left-control, div.carousel div.right-control {
+    position: absolute;
+    top: 0;
+    height: 100%; }
+  div.carousel div.left-control {
+    left: 0; }
+  div.carousel div.right-control {
+    right: 0; }

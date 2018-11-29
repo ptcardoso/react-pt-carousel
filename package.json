@@ -1,6 +1,6 @@
 {
   "name": "react-pt-carousel",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
@@ -11,7 +11,7 @@
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
-    "build-lib": "tsc && cp -r src/assets build/dist/assets",
+    "build-lib": "tsc && cp -r src/assets build/dist/assets && npm run build-css && cp -r src/styles build/dist/styles" ,
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject"
   },

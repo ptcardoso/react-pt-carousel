@@ -1,6 +1,6 @@
-import { Carousel } from './Carousel.tsx'
-import { PreviousButton, NextButton } from './Controllers.tsx';
-import { Indicators } from './Indicators.tsx';
+import { Carousel } from './Carousel'
+import { PreviousButton, NextButton } from './Controllers';
+import { Indicators } from './Indicators';
 
 export { 
     Carousel,
